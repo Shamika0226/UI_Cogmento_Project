@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="28.064">
+<testcase classname="login to system" name="1 : login with valid login credentials" time="11.042">
+<system-out><![CDATA[Given user launch chrome browser navigate to url "https://ui.cogmento.com/" application.passed
+When user enter username as "skiriwattuduwa@gmail.com" and password as "shAmi@123".passed
+And user click login button.................................................passed
+Then user able to navigate home page........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create an event using added contact details" name="1 : Add a new contact to the system and create an event using added contact details" time="16.812">
+<system-out><![CDATA[Given user in the homepage..................................................passed
+When user navigate to contact page..........................................passed
+And user navigate to create new contact.....................................passed
+And user create a new contact first name as "Shamika" middle name as "Sajeewa" last name as "Kiriwaththuduwa" company name as "Company123" email as "shamika123@gmail.com".passed
+And user save the created contact...........................................passed
+Then user able to view created contact......................................passed
+When user navigate to calendar page.........................................passed
+And user navigate to create new event page..................................passed
+And user enter event title as "title here" and participants as "Shamika"....passed
+Then user able to select added contact name from participant field..........passed
+]]></system-out>
+</testcase>
+</testsuite>
